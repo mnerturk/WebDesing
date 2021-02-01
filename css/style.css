@@ -1,0 +1,907 @@
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: #e9e9e9;
+}
+body ul{
+	list-style-type:none;
+}
+a{
+	text-decoration: none;
+}
+
+/* içindekiler
+-----header
+-----index
+-----footer
+-----contact
+-----about
+----------*/
+
+
+/*su tesisat logosu */
+.logo{
+	top: -7px;
+	height: 25px;
+	text-align: center;
+	margin-left: 90px;
+	position: relative;
+	font-size: 2.5em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 650;
+	letter-spacing: 2px;
+  opacity: 1.0;
+  background: radial-gradient(103.66% 506.48% at 55.56% 115.85%, #1EA393 0%, rgba(255, 255, 255, 0.392857) 17.71%, rgba(58, 135, 126, 0.34) 17.72%, rgba(64, 204, 187, 0.6) 37.5%, rgba(34, 141, 25, 0.39) 58.33%, rgba(71, 192, 60, 0) 77.08%, rgba(243, 17, 17, 0) 94.79%), radial-gradient(12.2% 35.34% at 13.13% 50%, #FFFFFF 0%, rgba(94, 198, 58, 0.744792) 25.52%, rgba(10, 209, 209, 0.473958) 52.6%, rgba(235, 143, 35, 0.1875) 81.25%, rgba(255, 255, 255, 0) 100%), radial-gradient(25.49% 91.58% at 84.34% 57.32%, #FFFFFF 0%, #FFFFFF 0.01%, rgba(254, 222, 139, 0.500117) 21.35%, rgba(23, 254, 254, 0) 42.71%, rgba(30, 226, 191, 0) 78.65%, rgba(250, 249, 244, 0) 100%), linear-gradient(90deg, #D8A522 0%, #3BEA10 17.68%, #19C2E8 32.29%, #1D31DD 59.38%, #E815DF 80.21%, #F30909 100%);
+
+}
+
+.logo:hover{
+  opacity: 1.0;
+  color: #fff;
+}
+.logo span{
+	color: black;
+  opacity: 1.0;
+}
+.logo span:hover{
+  opacity: 1.0;
+  color: #fff;
+}
+
+
+
+
+
+/*ketagori -------*/
+header nav div.menu ul {
+	background: black;
+	float: center;
+	margin: 0px;
+	padding-left: 20px;
+	padding-top: 6px;
+	margin-top: -72px;
+  opacity: 0.8;
+}
+header nav div.menu ul:hover{
+  opacity: 1.0;
+}
+header nav div.menu ul li{
+	background: black;
+	display: inline-block;
+	padding: 20px;
+  padding-left: 140px;
+}
+header nav div.menu ul a{
+	background: black;
+	color: white;
+
+}
+
+/* açılır menüler*/
+li.hizmet {
+  display: flex;
+}
+
+div.acilir {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hizmet:hover div.acilir {
+  display: flex;
+}
+
+div.servis {
+  display: none;
+  position: absolute;
+  background: #999;
+  z-index: 1;
+}
+
+.hizmet:hover div.servis {
+  display: flex;
+}
+
+/* açılır menü  VE yorum satırı kodları*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}/*----açılır menü bitimi--*/
+
+
+
+/*sosyal*/
+.sosyal{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ height: 47px;
+ background: #999;
+}
+.left{
+	font-size: 20px;/*yazı boyutu*/
+	font-weight: 600;/* yazı kalınlıgı*/
+	margin-top: 2px;/* üstten boşluk*/
+  position: relative; /*sabit değil*/
+  line-height: 10px;/* yükseklik*/
+  display: inline-flex; /*satır içi boşluk*/
+  margin-left: 0;/*sola sabitleme*/
+  z-index: 1;/* 1 tık üstte*/
+}
+
+.right{
+  position: relative;
+	height: 30px;
+	margin: 15px;
+	margin-top: 2px;
+	color: #111;
+	top: 0;
+	float: right;
+	display: inline-flex;
+	padding-right: 100px;
+	z-index: 1;
+	word-spacing: 0.7cm;
+}
+.right i{
+  font-size:43px;
+  color:white;
+}
+.right i:hover{
+  color: black;
+  box-shadow: 0 0 30px white, 0 0 10px white, 0 0 30px white;
+  background: white;
+}
+
+
+
+
+/* hakkımızda*/
+.center{
+	margin-left: 130px;
+	text-align: left;
+	display: inline-block;
+}
+div.center ul:hover{
+color: red;
+opacity: 1.0;
+}
+.email{
+	text-align: left;
+	display: inline-block;
+}
+.phone{
+	text-align: left;
+	display: inline-block;
+}
+.address{
+	text-align: left;
+	display: inline-block;
+}
+
+
+
+div.center ul{
+	font-size: 30px;
+    margin-bottom: 2px;
+    text-transform: uppercase;/* bütün yazıyı büyütür*/
+    letter-spacing: -.5px;
+    color: black;
+}
+div.center li{
+	font-size: 18px;
+    text-transform: uppercase;/* bütün yazıyı büyütür*/
+    letter-spacing: -.5px;
+    color: #3b3b3b;
+}
+
+
+
+
+/*buton*/
+.butonheader{
+  position: absolute;
+	background: linear-gradient(89.94deg, #F07650 0.04%, #478A6A 47.91%, #100F1D 84.54%);
+	font-size: 25px; 
+	border: 1px solid black;
+	width: 195px;
+	height: 75px;
+	display: inline-flex;
+	margin-left: 130px;
+	margin-top: 30px;
+  border-radius: 15px;
+}
+.buton{
+	margin-left: 4px;
+}
+.butonheader:hover{
+	box-shadow: 0 0 20px #111,0 0  20px #111,0 0 20px #111;
+}
+.butonheader a:hover{
+  color: red;
+}
+.butonheader a{
+	color: white;
+}
+
+
+
+/*video 3D görüntüsü*/
+
+section{
+  position: absolute;
+  width: 100%;
+  height: 100vh;animation: rotate 15s linear infinite;
+}
+section .box{
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+section .box div{
+  animation: animate 5s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px);
+}
+section .box div span{
+  position: absolute;
+  top: 0;
+  left: -400px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #ccc;
+}
+section .box div span .webkit:hover{
+  -webkit-box-reflect: right; /* 2px linear-gradient(transparent,#0005); saydamlık ekler*/
+}
+
+section .box div span video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0px);
+  border: 1px solid black;
+}
+
+
+section .box div span:nth-child(1){
+  transform: rotateX(0deg) translate3d(0,0,200px);
+}
+section .box div span:nth-child(2){
+  transform: rotateY(90deg) translate3d(0,0,-200px);
+}
+section .box div span:nth-child(2) video{
+  transform: rotateY(180deg);
+}
+section .box div span:nth-child(3){
+  transform: rotateX(90deg) translate3d(0,0,200px);
+}
+
+
+@keyframes animate{
+  0%
+  {
+    transform: perspective(3000px) rotateY(50deg);
+  }
+}
+
+
+/*video*/
+.video video{
+  position: fixed;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+
+/*video içerik*/
+.banner .textBox{
+  position: relative;
+  max-width: 600px;
+  z-index: 0;
+  margin-top: 350px;
+  margin-left: 1000px;
+}
+.banner .textBox h2{
+  color: #111;
+}
+.banner .textBox p{
+  color: #111;
+  font-size: 24px;
+  margin: 5px 0 25px;
+}
+.banner .textBox a{/*buton slider*/
+  float: left;
+  color: #fff;
+  position: relative;
+  display: inline-block;/*1 satır alt boşluk*/
+  background: radial-gradient(103.66% 506.48% at 55.56% 115.85%, #1EA393 0%, rgba(255, 255, 255, 0.392857) 17.71%, rgba(58, 135, 126, 0.34) 17.72%, rgba(64, 204, 187, 0.6) 37.5%, rgba(34, 141, 25, 0.39) 58.33%, rgba(71, 192, 60, 0) 77.08%, rgba(243, 17, 17, 0) 94.79%), radial-gradient(12.2% 35.34% at 13.13% 50%, #FFFFFF 0%, rgba(94, 198, 58, 0.744792) 25.52%, rgba(10, 209, 209, 0.473958) 52.6%, rgba(235, 143, 35, 0.1875) 81.25%, rgba(255, 255, 255, 0) 100%), radial-gradient(25.49% 91.58% at 84.34% 57.32%, #FFFFFF 0%, #FFFFFF 0.01%, rgba(254, 222, 139, 0.500117) 21.35%, rgba(23, 254, 254, 0) 42.71%, rgba(30, 226, 191, 0) 78.65%, rgba(250, 249, 244, 0) 100%), linear-gradient(90deg, #D8A522 0%, #3BEA10 17.68%, #19C2E8 32.29%, #1D31DD 59.38%, #E815DF 80.21%, #F30909 100%);
+  padding: 15px 25px;
+  text-decoration: none;/*alt çizgisini göstermez*/
+  text-transform: uppercase;/*yazıyı otamatik büyürür*/
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.banner .textBox a:hover{/*buton slider*/
+  box-shadow: 0 0 10px green,0 0 20px green,0 0 40px green;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  background: radial-gradient(4.08% 193.04% at 80.36% 49.12%, #EF1212 0%, rgba(143, 127, 246, 0.541667) 45.83%, rgba(78, 243, 223, 0.744792) 50.98%, rgba(70, 68, 81, 0.395833) 60.42%, rgba(58, 47, 123, 0.229167) 77.08%, rgba(35, 12, 174, 0.45) 85.94%, rgba(255, 255, 255, 0) 100%), radial-gradient(50% 50% at 50% 50%, #04F83A 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(9.69% 458.48% at 16.84% 49.12%, #FFFFFF 0%, #CDE924 14.58%, rgba(103, 185, 111, 0.7625) 24.48%, rgba(36, 91, 233, 0.3) 43.75%, rgba(233, 166, 36, 0.3) 62.5%, rgba(233, 36, 213, 0.3) 81.77%, rgba(233, 36, 36, 0.3) 96.87%), #0FF30A;
+}
+.banner .textBox a i:hover{/*buton slider*/
+  color: green;
+}
+
+
+/*bilgilendirme*/
+.bilgilenme{
+  padding-top: 300px;
+  position: relative;
+  width: 1100px;
+  padding-left: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bilgilenme h6{
+  color: #9932cc;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-top: -63px;
+  margin-left: 420px;
+  font-size: 32px;
+  background: linear-gradient(180deg, #04FF87 0%, rgba(4, 255, 135, 0) 100%);transition: 0.9s;  
+}
+.bilgilenme h6:hover{
+  box-shadow: 0 0 10px #444,0 0 20px #333,0 0 30px #222;
+}
+.bilgilenme .bilgi{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transition: 0.6s;
+}
+.bilgilenme .bilgi:hover{
+  box-shadow: 0 0 10px #444,0 0 20px #333,0 0 30px #222;
+}
+
+.bilgilenme .bilgi .bilg{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(178.08deg, #00C2FF 5.8%, rgba(23, 188, 240, 0) 98.31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bilgilenme .bilgi .bilg img{
+  max-width: 100px;
+}
+.bilgilenme .bilgi .bilg h3{
+  position: relative;
+  color: #111;
+  margin-top: 10px;
+}
+.bilgilenme .bilgi  .blg{
+  position: relative;
+  margin-left: -15px;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  color: #111;
+  text-align: center; 
+}
+
+
+
+
+
+/* yorum satırı*/
+form{
+  padding-top: 500px;
+  padding-left: 450px;
+  z-index: 999;
+}
+form label{
+  font-size: 20px;
+}
+form input{
+  width: 600px;
+  height: 80px;
+}
+form button{
+  width: 150px;
+  height: 60px;
+}
+form textarea{
+  width: 800px;
+  height: 180px;
+}
+form button{
+  width: 400px;
+  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); 
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+
+
+/*sponsorlar*/
+div.sponsor{
+  padding-top: 110px;
+  padding-left: 200px;
+  z-index: 999;
+}
+div.sponsor ul{
+  margin-right: 580px;
+  margin-left: 455px;
+  font-size: 32px;
+  color: red;
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  margin-top: 0px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  box-shadow: 0 0 10px #999,0 0 20px #999,0 0 40px #999;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.yazı {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+/*footer*/
+footer{
+  margin-top: 300px;
+  padding-bottom: 30px;
+  background: linear-gradient(90deg, #7E8684 10%, rgba(17, 31, 153, 0.71) 43.5%, rgba(241, 241, 241, 0) 51.04%, #3ABC9D 56.5%, #4374F2 79%);
+  position: relative;
+  background-size: 300% 300%;
+  color: #fff;
+  animation: change 8s ease-in-out infinite;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+}
+footer h3{
+  border-bottom: 2px solid white;
+  font-size:40px;
+}
+footer.hakkimiz{
+  display: inline-flex;
+}
+div.hakkimiz a{
+  margin-left: 700px;
+  margin-bottom: 100px;
+  font-size: 50px;
+}
+footer p {
+  font-size: 20px;
+}
+
+
+
+footer div.misyonumuz{
+  width: 300px;
+  height: auto;
+  margin-top: -40px;
+  border-right: 4px double red;
+}
+
+footer div.misyonumuz p{
+  position: relative;
+  margin: 10px;
+}
+
+
+
+footer div.vizyonuzmuz{
+  margin-top: -310px;
+  width: 300px;
+  height: auto;
+  margin-left: 350px;
+  border-right: 4px double red;
+}
+footer div.vizyonuzmuz p{
+  margin: 10px;
+} 
+
+
+/* ağlar*/
+footer div.ağlar{
+margin-top: -180px;
+width: 300px;
+height: auto;
+margin-left: 0px;
+}
+footer div.ağlar i{
+  color: black;
+}
+footer div.ağlar i:hover{
+  box-shadow: 0 0 10px white,0 0 20px white,0 0 30px white;
+  background: white;
+}
+/*aramalar*/
+footer div.arama{
+  margin-top: -190px;
+  margin-left: 150px;
+}
+footer div.arama a{
+  color: black;
+}
+footer div.arama a:hover{
+  box-shadow: 0 0 10px white,0 0 20px white,0 0 30px white;
+  background: white;
+}
+@keyframes change 
+{
+  0%
+  {
+    background-position: 0 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0 50%;
+  }
+
+}
+
+
+
+/*bize ulaşın*/
+
+footer div.butonfooter{/*butonfooter*/
+  position: relative;
+  margin-top: -340px;
+  margin-left: 10px;
+  letter-spacing: 3px;
+  
+}
+footer div.butonfooter a{
+  color: white;
+  background: radial-gradient(50.67% 79.36% at 50% 49.33%, #287ADA 30.73%, rgba(20, 29, 22, 0.91) 100%);
+}
+footer div.butonfooter a{
+  font-size: 58px;
+}
+footer div.butonfooter a:hover{
+  background: radial-gradient(50.67% 79.36% at 50% 49.33%, #287ADA 30.73%, rgba(20, 229, 242, 0.91) 100%);
+  box-shadow: 0 0 10px white,0 0 20px white,0 0 30px white;
+}
+
+
+
+
+/*yaptıklarımız*/
+footer div.hizmet{
+  margin-top: -100px;
+  margin-left: 435px;
+
+}
+footer div.hizmet li{
+  font-size: 36px;
+  margin-left: 720px;
+  list-style-type: square;
+  color: red;
+}
+footer div.hizmet li a{
+  color: white;
+}
+footer div.hizmet ul.ba{
+  margin-left: 650px;
+  font-size: 50px;
+}
+div.cizim  li{
+   background: linear-gradient(269.91deg, #E01DF1 20.25%, rgba(255, 255, 255, 0) 20.25%), linear-gradient(270deg, #0EEAF8 39.74%, rgba(255, 255, 255, 0) 39.75%), linear-gradient(269.97deg, #200DFF 52.51%, rgba(255, 255, 255, 0) 52.51%), linear-gradient(89.85deg, rgba(255, 255, 255, 0) 27.29%, #00FF38 29.02%), linear-gradient(90deg, rgba(248, 253, 0, 0) 10.21%, #C5F30C 11.28%), linear-gradient(270deg, #C4C4C4 82.21%, #FC0808 82.21%);
+   width: 100%;
+   height: 9px;
+ }
+
+
+
+/*contact */
+div form button{
+  position: relative;
+  width: 400px;
+  height: 60px;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);  
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 150px;
+}
+div form button:hover{
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+div form{
+  border-radius: 5px;
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  padding: 2px;
+  margin-bottom: -399px;
+}
+
+input, select {
+  color: white;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply; 
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #cc99cc;
+}
+textarea{
+  color: white;
+  background: #666;
+  border: none;
+  border-bottom: 2px solid #cc99cc;
+}
+select{
+  width: 520px;
+  height: 50px;
+}
+option{
+  color: black;
+}
+
+
+
+/*------about------*/
+section.aboutkrgbekran{
+ height: 1873px;
+ width: 100%;
+ background: linear-gradient(90deg, #D1F208 10%, rgba(199, 19, 62, 0.88) 43.5%, #969596 51.04%, #A23ABC 56.5%, #CB9D28 79%);  color: #fff;
+ animation: rgbekran 8s ease-in-out infinite;
+ position: absolute;
+ background-size: 300% 300%;
+ opacity: 0.4;
+
+}
+
+@keyframes rgbekran 
+{
+  0%
+  {
+    background-position: 0 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0 50%;
+  }
+
+}
+
+
+div.üst{
+  margin-left: 0px;
+  margin-bottom: -80px;
+
+}
+.dropdow {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.açi{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: black;
+}
+.dropdow-content a{
+  color: black;
+}
+
+.dropdow:hover .açi {
+  display: block;
+}
+div.dropdow div.yaz {
+  padding: 15px;
+  text-align: center;
+}/*----açılır menü bitimi--*/
+
+div.tanitim{
+  float: left;
+  padding-left: 110px;
+  width: 600px;
+}
+div.tanitim h2{
+  font-size: 32px;
+  color: red;
+}
+div.tanitim li{
+  font-size: 20px;
+}
+div.tanitimright{
+  margin-left: 800px;
+}
+div.tanitimright h2{
+  font-size: 32px;
+  color: red;
+}
+div.tanitimright li{
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+h1{
+  color: red;
+}
+
+
+/*about bitiş*/
+
+
+/*müzik başlangıç*/
+audio{
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  margin-left: 530px;
+  margin-top: 10px;
+}
+
+/*kaydırmalar*/
+/*bannerkaydırma*/
+.banner {
+  opacity: 0;
+  font-size: 12px;
+  transition: 1s;
+}
+.banner.su{
+  opacity: 1;
+  font-size: 28px;
+}
+
+/*contact kaydırma*/
+.contact{
+  opacity: 0.2;
+  transition: 1.1s;
+  width: 0%;
+}
+.contact.show{
+  opacity: 1;
+  width: 100%;
+}
+
+/*about renklendirme*/
+.misyon{
+  width: 20%;
+  opacity: 0;
+  transition: 1s;
+}
+.misyon.ekleme{
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  width: 100%;
+  opacity: 1;
+}
+.biz{
+  width: 20%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.biz.ekleme{
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  width: 100%;
+  opacity: 1;
+}
+.nasil{
+  width: 20%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.nasil.ekleme{
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  width: 100%;
+  opacity: 1;
+}
+.sukacag{
+  width: 20%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.sukacag.ekleme{
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  width: 100%;
+  opacity: 1;
+}
+.tanitimright{
+  width: 20%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.tanitimright.ekleme{
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  width: 660px;
+  opacity: 1;
+}
